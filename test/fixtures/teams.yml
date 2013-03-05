@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  league_id: 1
+  name: MyString
+  team_name: MyString
+  team_short_name: MyString
+  city_name: MyString
+  state_abbreviation: MyString
+  primary_color: MyString
+  second_color: MyString
+
+two:
+  league_id: 1
+  name: MyString
+  team_name: MyString
+  team_short_name: MyString
+  city_name: MyString
+  state_abbreviation: MyString
+  primary_color: MyString
+  second_color: MyString

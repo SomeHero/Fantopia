@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>League:</b>
+  <%= @team.league_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @team.name %>
+</p>
+
+<p>
+  <b>Team name:</b>
+  <%= @team.team_name %>
+</p>
+
+<p>
+  <b>Team short name:</b>
+  <%= @team.team_short_name %>
+</p>
+
+<p>
+  <b>City name:</b>
+  <%= @team.city_name %>
+</p>
+
+<p>
+  <b>State abbreviation:</b>
+  <%= @team.state_abbreviation %>
+</p>
+
+<p>
+  <b>Primary color:</b>
+  <%= @team.primary_color %>
+</p>
+
+<p>
+  <b>Second color:</b>
+  <%= @team.second_color %>
+</p>
+
+
+<%= link_to 'Edit', edit_team_path(@team) %> |
+<%= link_to 'Back', teams_path %>
