@@ -1,4 +1,7 @@
 Fantopia::Application.routes.draw do
+  resources :game_locations
+
+
   resources :teams
 
 

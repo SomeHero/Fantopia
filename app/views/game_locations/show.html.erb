@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @game_location.name %>
+</p>
+
+<p>
+  <b>Street address:</b>
+  <%= @game_location.street_address %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @game_location.city %>
+</p>
+
+<p>
+  <b>State abbreviation:</b>
+  <%= @game_location.state_abbreviation %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%= @game_location.zip %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @game_location.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @game_location.longitude %>
+</p>
+
+
+<%= link_to 'Edit', edit_game_location_path(@game_location) %> |
+<%= link_to 'Back', game_locations_path %>
