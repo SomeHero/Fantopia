@@ -22,7 +22,7 @@ end
 
 gem 'jquery-rails'
 gem 'devise'
-gem 'activeadmin'
+gem "activeadmin", :git => "git://github.com/gregbell/active_admin.git"
 gem 'meta_search', '>= 1.1.0.pre'
 
 # To use ActiveModel has_secure_password
