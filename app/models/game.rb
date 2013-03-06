@@ -5,12 +5,16 @@ class Game < ActiveRecord::Base
   belongs_to:away_team, :class_name => "Team"
   belongs_to:home_team, :class_name => "Team"
 
-    # generate the game
+   # generate the game
   def to_api
 
     results = {
       'game_id' => id,
-      'game_date' => name
+      'league' => league.to_api,
+      'away_team' => away_team.to_api,
+      'home_team' => home_team.to_api,
+      'game_date' => game_date,
+      'game_location' => game_location.to_api
     }
 
     return results;

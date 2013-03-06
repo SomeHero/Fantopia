@@ -72,8 +72,9 @@ Fantopia::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
 
     # API routes
-  match '/api/games' => 'api/api#games'
   match '/api/leagues' => 'api/api#leagues'
   match '/api/teams' => 'api/api#teams'
+  match '/api/games' => 'api/api#games'
+  match '/api/game_locations' => 'api/api#game_locations'
 
 end
