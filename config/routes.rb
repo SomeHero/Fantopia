@@ -70,4 +70,10 @@ Fantopia::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+
+    # API routes
+  match '/api/games' => 'api/api#games'
+  match '/api/leagues' => 'api/api#leagues'
+  match '/api/teams' => 'api/api#teams'
+
 end

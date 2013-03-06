@@ -1,4 +1,17 @@
 class Team < ActiveRecord::Base
   attr_accessible :city_name, :league_id, :name, :primary_color, :second_color, :state_abbreviation, :team_name, :team_short_name
-  belongs_to:league
+  belongs_to:League, :class_name => "League"
+
+    # generate the league
+  def to_api
+
+    results = {
+      'team_id' => id,
+      'name' => name
+    }
+
+    return results;
+
+  end
+
 end
