@@ -16,9 +16,14 @@ class Api::ApiController < ApplicationController
 	end
 
 	def leagues
-		leagues = League.first
+		leagues = League.all
 
-		render_result(leagues.to_api)
+		results = []
+		leagues.each do |league|
+        	results << league.to_api
+        end
+
+		render_result(results)
 	end
 
 
