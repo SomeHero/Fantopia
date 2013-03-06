@@ -12,7 +12,12 @@ class Api::ApiController < ApplicationController
 	def games
 		games = Game.all
 
-		render_result(games) 
+		results = []
+		games.each do |game|
+        	results << game.to_api
+        end
+
+		render_result(results) 
 	end
 
 	def leagues
