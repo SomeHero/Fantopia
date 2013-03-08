@@ -6,6 +6,7 @@ class GameLocation < ActiveRecord::Base
 
     results = {
       'game_location_id' => id,
+      'name' => name,
       'street_address' => street_address,
       'city' => city,
       'state_abbreviation' => state_abbreviation,

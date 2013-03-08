@@ -14,7 +14,7 @@ class Team < ActiveRecord::Base
       'city_name' => city_name,
       'state_abbreviation' => state_abbreviation,
       'primary_color' => primary_color,
-      'second_color' => second_color
+      'secondary_color' => second_color
     }
 
     return results;
